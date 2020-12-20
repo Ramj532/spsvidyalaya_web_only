@@ -176,7 +176,7 @@
                 </div>
             </div>
         </footer>
-        
+        <?php echo '<p style="display: none;">Hello World</p>'; ?>
         <script>
             $(document).ready(function(){
                 setTimeout(
