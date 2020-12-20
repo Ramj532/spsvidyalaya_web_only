@@ -1,8 +1,54 @@
-<section class="page-breadcumb-area bg-with-black">
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta charset="ISO-8859-15">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Test file</title>
+        <!--
+        <link rel="stylesheet" href="../assets/css/front/style.css">
+        <link rel="stylesheet" href="../assets/css/front/rtl.css">
+        <link rel="stylesheet" href="../assets/css/rtl/custom-rtl.css">
+    -->
+        <link rel="stylesheet" href="../assets/css/front/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/front/jquery-ui.css">
+        <link rel="stylesheet" href="../assets/css/front/fontawesome-all.min.css">
+        <link rel="stylesheet" href="../assets/css/front/owl.carousel.min.css">
+        <link rel="stylesheet" href="../assets/css/front/animate.css">
+        <link rel="stylesheet" href="../assets/css/front/meanmenu.css">
+        <link rel="stylesheet" href="../assets/css/front/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="../assets/css/front/theme/rebecca-purple.css">
+        <link rel="stylesheet" href="../assets/css/front/responsive.css">
+    
+
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="../assets/js/jquery.validate.js"></script>
+        <script src="../assets/js/script.js"></script>
+
+        <!-- Scripts -->      
+        <script src="../assets/js/front/jquery-ui.js"></script>
+        <script src="../assets/js/front/owl.carousel.min.js"></script>
+        <script src="../assets/js/front/jquery.counterup.min.js"></script>
+        <script src="../assets/js/front/jquery.meanmenu.js"></script>
+        <script src="../assets/js/front/jquery.fancybox.min.js"></script>
+        <script src="../assets/js/front/jquery.scrollUp.js"></script>
+        <script src="../assets/js/front/jquery.waypoints.min.js"></script>
+        <script src="../assets/js/front/popper.min.js"></script>
+        <script src="../assets/js/front/bootstrap.min.js"></script>
+        <script src="../assets/js/front/theme.js"></script> 
+    </head>
+    <body>
+        <section class="page-breadcumb-area bg-with-black">
     <div class="container text-center">
         <h2 class="title">Gallery</h2>
         <ul class="links">
-            <li><a href="/spsvidyalaya">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="javascript:void(0);">All Gallery</a></li>
         </ul>
     </div>
@@ -11,31 +57,47 @@
 <section class="page-gallery-area">
     <div class="container">
      <div class="row"> 
-    <?php if(isset($galleries) && !empty($galleries)){ ?>
-        <?php foreach($galleries AS $obj){ ?>
-        <?php $images = get_gallery_images($obj->school_id, $obj->id); ?> 
-            <?php if(!empty($images)){ ?>
+
                 <div class="gallery-section-title">
                     <h2 class="title">College Infrastructure</h2>
-                    <div class="text">College Infrastructure</div>
+                    <div class="text"></div>
                 </div>
                 <div class="gallery-carousel owl-carousel">
 
                     <div class="single-gallery">
-                        <a href="<?php echo UPLOAD_PATH; ?>gallery/<?php echo $img->image; ?>" data-fancybox="images">
+                        <a href="../assets//images//School_building/building_photo.png" data-fancybox="images">
                             <span class="icon"><i class="fas fa-search-plus"></i></span>
-                            <img src="<?php echo UPLOAD_PATH; ?>gallery/<?php echo $img->image; ?>" alt="<?php echo $img->caption; ?>" />
+                            <img src="../assets//images//School_building/building_photo.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="single-gallery">
+                        <a href="../assets//images//School_building/banner01.png" data-fancybox="images">
+                            <span class="icon"><i class="fas fa-search-plus"></i></span>
+                            <img src="../assets//images//School_building/banner01.png" alt="" />
                         </a>
                     </div>
 
-                </div>        
-            <?php } ?> 
-    <?php } ?> 
-    <?php }else{ ?>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-            <p class="text-center"><strong><?php echo $this->lang->line('no_data_found'); ?>This is galary in else block</strong></p>
-        </div>
-    <?php } ?>
+                    <div class="single-gallery">
+                        <a href="../assets//images//School_building/banner02.jpg" data-fancybox="images">
+                            <span class="icon"><i class="fas fa-search-plus"></i></span>
+                            <img src="../assets//images//School_building/banner02.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="single-gallery">
+                        <a href="../assets//images//School_building/banner05.jpg" data-fancybox="images">
+                            <span class="icon"><i class="fas fa-search-plus"></i></span>
+                            <img src="../assets//images//School_building/banner05.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="single-gallery">
+                        <a href="../assets//images//School_building/banner06.jpg" data-fancybox="images">
+                            <span class="icon"><i class="fas fa-search-plus"></i></span>
+                            <img src="../assets//images//School_building/banner06.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
        </div>  
     </div>
 </section>
+</body>
+</html>

@@ -541,7 +541,7 @@ button {}
 /*----------------------------------------*/
 
 .glbscl-link-btn {
-    background: #000059 none repeat scroll 0 0;
+    background: #663399 none repeat scroll 0 0;
     border: 0 none;
     border-radius: 3px;
     color: #ffffff !important;
@@ -599,7 +599,7 @@ header {
 }
 
 .header-bottom-area {
-    background: #000059 none repeat scroll 0 0;
+    background: #663399 none repeat scroll 0 0;
     bottom: 0;
     left: 0;
     position: relative;
@@ -840,7 +840,7 @@ header {
 .top-banner-content {}
 
 .top-banner-content .intro {
-    color: #000059;
+    color: #663399;
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
@@ -848,7 +848,7 @@ header {
 }
 
 .top-banner-content .title {
-    border-bottom: 1px solid #000059;
+    border-bottom: 1px solid #663399;
     color: #474747;
     font-size: 42px;
     font-weight: 600;
@@ -874,7 +874,7 @@ header {
 }
 
 .top-banner-img::before {
-    background: #000059 none repeat scroll 0 0;
+    background: #663399 none repeat scroll 0 0;
     content: "";
     height: 100%;
     left: 0;
@@ -944,11 +944,11 @@ header {
 }
 
 .section-title .title .inner {
-    color: #000059;
+    color: #663399;
 }
 
 .single-faclities {
-    background: #000059 none repeat scroll 0 0;
+    background: #663399 none repeat scroll 0 0;
     cursor: pointer;
     margin: 0 0 30px;
     padding: 27px 0 26px;
@@ -1067,7 +1067,7 @@ header {
 }
 
 .single-event .content .list .info .icon {
-    color: #000059;
+    color: #663399;
     font-size: 16px;
     left: 0;
     position: absolute;
@@ -1204,7 +1204,7 @@ header {
 }
 
 .single-news .content .meta .info .icon {
-    color: #000059;
+    color: #663399;
     margin-right: 3px;
 }
 
@@ -1346,7 +1346,7 @@ header {
 }
 
 .apply-now {
-    background: #000059 none repeat scroll 0 0;
+    background: #663399 none repeat scroll 0 0;
     padding: 50px 20px 50px 86px;
 }
 
@@ -1359,7 +1359,7 @@ header {
 
 .apply-now .link {
     background: #ffffff none repeat scroll 0 0;
-    color: #000059 !important; 
+    color: #663399 !important; 
     padding: 10px 14px;
 }
 
@@ -1445,7 +1445,7 @@ footer {}
 
 .footer-widget .social a:hover {
     background: #ffffff none repeat scroll 0 0;
-    color: #000059;
+    color: #663399;
 }
 
 .footer-widget .address {
@@ -1594,7 +1594,7 @@ footer {}
 }
 
 .page-news-details .meta .info .icon {
-    color: #000059;
+    color: #663399;
     margin-right: 3px;
 }
 
@@ -1677,7 +1677,7 @@ footer {}
 }
 
 .sidebar-title::after {
-    background: #000059 none repeat scroll 0 0;
+    background: #663399 none repeat scroll 0 0;
     bottom: 0;
     content: "";
     height: 1px;
@@ -1692,7 +1692,7 @@ footer {}
 }
 
 .widget-news li {
-    border-bottom: .5px solid #000059;
+    border-bottom: .5px solid #663399;
     display: block;
     margin-bottom: 16px;
     padding-bottom: 15px;
@@ -1749,7 +1749,7 @@ footer {}
 }
 
 .widget-news a .content .meta .info .icon {
-    color: #000059;
+    color: #663399;
     margin-right: 3px;
 }
 
@@ -1812,7 +1812,7 @@ footer {}
 }
 
 .page-event-details .event-meta li .icon {
-    color: #000059;
+    color: #663399;
     margin-right: 8px;
 }
 
@@ -1835,7 +1835,7 @@ footer {}
 }
 
 .widget-event li {
-    border-bottom: .5px solid #000059;
+    border-bottom: .5px solid #663399;
     display: block;
     margin: 0 0 20px;
     padding: 0 0 15px;
@@ -1893,7 +1893,7 @@ footer {}
 }
 
 .widget-event li a .content .event-meta .info .icon {
-    color: #000059;
+    color: #663399;
     margin-right: 8px;
 }
 
@@ -2033,12 +2033,12 @@ footer {}
 }
 
 .single-team:hover{
-    border-color: #000059;
+    border-color: #663399;
     cursor: pointer;    
 }
 
 .single-team .st-upper {
-    background: #000059 none repeat scroll 0 0;
+    background: #663399 none repeat scroll 0 0;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -2072,7 +2072,7 @@ footer {}
 }
 
 .single-team .st-content .social {
-    background: #000059 none repeat scroll 0 0;
+    background: #663399 none repeat scroll 0 0;
     color: #fff;
     -webkit-flex: 1 1 50%;
     -moz-flex: 1 1 50%;
@@ -2128,7 +2128,7 @@ footer {}
 }
 
 .single-team .st-content .contact .icon {
-   color: #000059;
+   color: #663399;
 }
 
 .single-team .st-content .name:hover,
@@ -2152,7 +2152,7 @@ footer {}
 
 .single-team .st-content .contact {
     list-style: outside none none;
-    padding: 16px 8px;
+    padding: 16px 0px;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
@@ -2187,7 +2187,7 @@ footer {}
 
 .single-notice {
     background: #f8f7f7 none repeat scroll 0 0;
-    border: 1px solid #000059;
+    border: 1px solid #663399;
     margin: 0 0 30px;
     padding: 24px 14px;
     transition: all 0.3s ease 0s;
@@ -2230,7 +2230,7 @@ footer {}
 }
 
 .single-notice  .meta .info .icon {
-    color: #000059;
+    color: #663399;
     margin-right: 3px;
 }
 
@@ -2286,7 +2286,7 @@ footer {}
 }
 
 .page-notice  .meta .info .icon {
-    color: #000059;
+    color: #663399;
     margin-right: 3px;
 }
 
@@ -2301,7 +2301,7 @@ footer {}
 }
 
 .widget-notice li {
-    border-bottom: .5px solid #000059;
+    border-bottom: .5px solid #663399;
     display: block;
     margin: 0 0 20px;
     padding: 0 0 21px;
@@ -2340,10 +2340,10 @@ footer {}
 
 .widget-notice .date .icon {
     margin-right: 4px;
-    color: #000059;
+    color: #663399;
 }
 .date .icon {    
-    color: #000059;
+    color: #663399;
 }
 
 /*----------------------------------------*/
@@ -2377,7 +2377,7 @@ footer {}
 }
 
 .gallery-section-title .title::after {
-    background: #000059 none repeat scroll 0 0;
+    background: #663399 none repeat scroll 0 0;
     bottom: 0;
     content: "";
     height: 1px;
@@ -2488,7 +2488,7 @@ footer {}
 }
 
 .contact-page-title::after {
-    background: #000059 none repeat scroll 0 0;
+    background: #663399 none repeat scroll 0 0;
     bottom: 0;
     content: "";
     height: 1px;
@@ -2508,7 +2508,7 @@ footer {}
 .contact-input-box input[type="text"],
 .contact-input-box input[type="email"],
 .contact-input-box textarea {
-    border: .5px solid #000059;
+    border: .5px solid #663399;
     border-radius: 3px;
     color: #9f9f9f;
     font-size: 14px;
@@ -2530,7 +2530,7 @@ footer {}
 
 .single-contact-info {
     background: #f6f5f5 none repeat scroll 0 0;
-    border: .5px solid #000059;
+    border: .5px solid #663399;
     margin-bottom: 30px;
     min-height: 120px;
     padding: 0 10px 6px;
@@ -2538,7 +2538,7 @@ footer {}
 }
 
 .single-contact-info .icon {
-    color: #000059;
+    color: #663399;
     display: inline-block;
     font-size: 35px;
     line-height: 35px;
@@ -2661,4 +2661,11 @@ a {
     color: #303030;
 }
 /* My End */
-.freebirdFormviewerViewNumberedItemContainer {width: 45% !important;display: inline-block !important;}.freebirdFormviewerComponentsQuestionBaseRoot {padding: 15px !important;}.freebirdFormviewerComponentsQuestionBaseHeader {margin-bottom: 0px !important;}.quantumWizTextinputPaperinputEl {width: 100% !important;}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: none;
+        padding: 0 5%;
+        margin: 0;
+    }
+}

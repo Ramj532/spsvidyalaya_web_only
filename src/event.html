@@ -1,9 +1,56 @@
-<section class="page-breadcumb-area bg-with-black">
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta charset="ISO-8859-15">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Test file</title>
+        <!--
+        <link rel="stylesheet" href="../assets/css/front/style.css">
+        <link rel="stylesheet" href="../assets/css/front/rtl.css">
+        <link rel="stylesheet" href="../assets/css/rtl/custom-rtl.css">
+    -->
+        <link rel="stylesheet" href="../assets/css/front/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/front/jquery-ui.css">
+        <link rel="stylesheet" href="../assets/css/front/fontawesome-all.min.css">
+        <link rel="stylesheet" href="../assets/css/front/owl.carousel.min.css">
+        <link rel="stylesheet" href="../assets/css/front/animate.css">
+        <link rel="stylesheet" href="../assets/css/front/meanmenu.css">
+        <link rel="stylesheet" href="../assets/css/front/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="../assets/css/front/theme/rebecca-purple.css">
+        <link rel="stylesheet" href="../assets/css/front/responsive.css">
+    
+
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="../assets/js/jquery.validate.js"></script>
+        <script src="../assets/js/script.js"></script>
+
+        <!-- Scripts -->      
+        <script src="../assets/js/front/jquery-ui.js"></script>
+        <script src="../assets/js/front/owl.carousel.min.js"></script>
+        <script src="../assets/js/front/jquery.counterup.min.js"></script>
+        <script src="../assets/js/front/jquery.meanmenu.js"></script>
+        <script src="../assets/js/front/jquery.fancybox.min.js"></script>
+        <script src="../assets/js/front/jquery.scrollUp.js"></script>
+        <script src="../assets/js/front/jquery.waypoints.min.js"></script>
+        <script src="../assets/js/front/popper.min.js"></script>
+        <script src="../assets/js/front/bootstrap.min.js"></script>
+        <script src="../assets/js/front/theme.js"></script> 
+
+    </head>
+    <body>
+        <section class="page-breadcumb-area bg-with-black">
     <div class="container text-center">
-        <h2 class="title"><?php echo $this->lang->line('event'); ?></h2>
+        <h2 class="title">Event</h2>
         <ul class="links">
-            <li><a href="<?php echo site_url(); ?>"><?php echo $this->lang->line('home'); ?></a></li>
-            <li><a href='javascript:void(0);'><?php echo $this->lang->line('all_event'); ?></a></li>
+            <li><a href="">Home</a></li>
+            <li><a href='javascript:void(0);'>All Event</a></li>
         </ul>
     </div>
 </section>
@@ -11,37 +58,27 @@
 <section class="page-event-area">
     <div class="container">
         <div class="row justify-content-center">
-        <?php if(isset($events) && !empty($events)){ ?>
-            <?php foreach($events AS $obj){ ?>
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="single-event">
                     <div class="img">
-                        <?php if(isset($obj->image) && !empty($obj->image)){ ?>
-                            <img src="<?php echo UPLOAD_PATH; ?>event/<?php echo $obj->image; ?>" alt="">
-                        <?php }else{ ?>
-                            <img src="<?php echo IMG_URL; ?>news-image.jpg" alt="">
-                        <?php } ?> 
+                            <img src="../assets/uploads/gallery/3-image-1607872253-sms.jpg"alt="">
                     </div>
                     <div class="content">
-                        <h2 class="title"><a href="<?php echo site_url('event-detail/'.$obj->id); ?>"><?php echo $obj->title; ?></a></h2>
+                        <h2 class="title"><a href="./event_detail.html">Children's day celebrations</a></h2>
                         <ul class="list">
-                            <li class="info"><span class="icon"><i class="fas fa-user"></i></span><?php echo $obj->event_for ? $obj->event_for : $this->lang->line('all'); ?> (<?php echo $this->lang->line('event_for'); ?>)</li>
-                            <li class="info"><span class="icon"><i class="far fa-calendar-alt"></i></span><?php echo date($this->global_setting->date_format, strtotime($obj->event_from)); ?> (<?php echo $this->lang->line('start_date'); ?>)</li>
-                            <li class="info"><span class="icon"><i class="far fa-calendar-alt"></i></span><?php echo date($this->global_setting->date_format, strtotime($obj->event_to)); ?> (<?php echo $this->lang->line('end_date'); ?>)</li>
-                            <li class="info"><span class="icon"><i class="fas fa-map-marker-alt"></i></span><?php echo $obj->event_place; ?></li>
+                            <li class="info"><span class="icon"><i class="fas fa-user"></i></span>Event for : Childrens day</li>
+                            <li class="info"><span class="icon"><i class="far fa-calendar-alt"></i></span>Event from : 14/11/2020</li>
+                            <li class="info"><span class="icon"><i class="far fa-calendar-alt"></i></span>End date : 14/11/2020</li>
+                            <li class="info"><span class="icon"><i class="fas fa-map-marker-alt"></i></span>Event place : Auditorium</li>
                         </ul>
                         <div class="more text-center">
-                            <a href="<?php echo site_url('event-detail/'.$obj->id); ?>" class="link glbscl-link-btn hvr-bs"><?php echo $this->lang->line('read_more'); ?></a>
+                            <a href="./event_detail.html" class="link glbscl-link-btn hvr-bs">Read More</a>
                         </div>
                     </div>
                 </div>
             </div>
-           <?php } ?>
-        <?php }else{ ?>
-            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                <p class="text-center"><strong><?php echo $this->lang->line('no_data_found'); ?></strong></p>
-            </div>
-        <?php } ?>
         </div>
     </div>
 </section>
+</body>
+</html>
