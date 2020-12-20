@@ -1,10 +1,57 @@
-<section class="page-breadcumb-area bg-with-black">
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta charset="ISO-8859-15">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Test file</title>
+        <!--
+        <link rel="stylesheet" href="../assets/css/front/style.css">
+        <link rel="stylesheet" href="../assets/css/front/rtl.css">
+        <link rel="stylesheet" href="../assets/css/rtl/custom-rtl.css">
+    -->
+        <link rel="stylesheet" href="../assets/css/front/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/front/jquery-ui.css">
+        <link rel="stylesheet" href="../assets/css/front/fontawesome-all.min.css">
+        <link rel="stylesheet" href="../assets/css/front/owl.carousel.min.css">
+        <link rel="stylesheet" href="../assets/css/front/animate.css">
+        <link rel="stylesheet" href="../assets/css/front/meanmenu.css">
+        <link rel="stylesheet" href="../assets/css/front/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="../assets/css/front/theme/rebecca-purple.css">
+        <link rel="stylesheet" href="../assets/css/front/responsive.css">
+    
+
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="../assets/js/jquery.validate.js"></script>
+        <script src="../assets/js/script.js"></script>
+
+        <!-- Scripts -->      
+        <script src="../assets/js/front/jquery-ui.js"></script>
+        <script src="../assets/js/front/owl.carousel.min.js"></script>
+        <script src="../assets/js/front/jquery.counterup.min.js"></script>
+        <script src="../assets/js/front/jquery.meanmenu.js"></script>
+        <script src="../assets/js/front/jquery.fancybox.min.js"></script>
+        <script src="../assets/js/front/jquery.scrollUp.js"></script>
+        <script src="../assets/js/front/jquery.waypoints.min.js"></script>
+        <script src="../assets/js/front/popper.min.js"></script>
+        <script src="../assets/js/front/bootstrap.min.js"></script>
+        <script src="../assets/js/front/theme.js"></script> 
+
+    </head>
+    <body>
+        <section class="page-breadcumb-area bg-with-black">
     <div class="container text-center">
-        <h2 class="title"><?php echo $this->lang->line('event_detail'); ?></h2>
+        <h2 class="title">Event detail</h2>
         <ul class="links">
-            <li><a href="<?php echo site_url(); ?>"><?php echo $this->lang->line('home'); ?></a></li>
-            <li><a href="<?php echo site_url('events'); ?>"><?php echo $this->lang->line('all_event'); ?></a></li>
-            <li><a href="javascript:void(0);"><?php echo $this->lang->line('event_detail'); ?></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="./event.html">All events</a></li>
+            <li><a href="javascript:void(0);">Event detail</a></li>
         </ul>
     </div>
 </section>
@@ -14,53 +61,42 @@
             <div class="col-lg-8 col-md-12 col-sm-12 col-12">
                 <div class="page-event-details">
                     <div class="banner">
-                        <?php if(isset($event->image) && !empty($event->image)){ ?>
-                            <img src="<?php echo UPLOAD_PATH; ?>event/<?php echo $event->image; ?>" alt="">
-                        <?php }else{ ?>
-                            <img src="<?php echo IMG_URL; ?>news-image.jpg" alt="">
-                        <?php } ?> 
+                            <img src="../assets/uploads/event/event-1607873154-sms.jpg" alt="">
                     </div>
-                    <h2 class="title"><?php echo $event->title; ?></h2>
+                    <h2 class="title">Title</h2>
                     <ul class="event-meta">
-                        <li class="info"><span class="icon"><i class="fas fa-user"></i></span> <?php echo $event->event_for ? $event->event_for : $this->lang->line('all'); ?> (<?php echo $this->lang->line('event_for'); ?>)</li>
-                        <li class="info"><span class="icon"><i class="far fa-calendar-alt"></i></span> <?php echo date($this->global_setting->date_format, strtotime($event->event_from)); ?> (<?php echo $this->lang->line('start_date'); ?>)</li>
-                        <li class="info"><span class="icon"><i class="far fa-calendar-alt"></i></span> <?php echo date($this->global_setting->date_format, strtotime($event->event_to)); ?> (<?php echo $this->lang->line('end_date'); ?>)</li>
-                        <li class="info"><span class="icon"><i class="fas fa-map-marker-alt"></i></span> <?php echo $event->event_place; ?></li>
+                        <li class="info"><span class="icon"><i class="fas fa-user"></i></span> Event for: Childrens day celebrations</li>
+                        <li class="info"><span class="icon"><i class="far fa-calendar-alt"></i></span> Event from: 14/11/2020</li>
+                        <li class="info"><span class="icon"><i class="far fa-calendar-alt"></i></span> Event till: 14/11/2020</li>
+                        <li class="info"><span class="icon"><i class="fas fa-map-marker-alt"></i></span> Event place: Auditorium</li>
                     </ul>
-                    <h2 class="info-title"><?php echo $this->lang->line('note'); ?> :</h2>
-                    <div class="text"><?php echo $event->note; ?></div>
+                    <h2 class="info-title">Note</h2>
+                    <div class="text">Childrens day celebrations</div>
                 </div>
             </div>
             
             <div class="col-lg-4 offset-lg-0 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-12">
                 <div class="sidebar">
                     <div class="sidebar-widget">
-                        <h2 class="sidebar-title"><?php echo $this->lang->line('latest_event'); ?></h2>
+                        <h2 class="sidebar-title">Latest event</h2>
                         <ul class="widget-event">
-                            <?php if(isset($events) && !empty($events)){ ?> 
-                                <?php foreach($events AS $obj){ ?>
+
                                 <li>
                                     <a href="<?php echo site_url('event-detail/'.$obj->id); ?>">
                                         <span class="img">
-                                            <?php if(isset($obj->image) && !empty($obj->image)){ ?>
                                                 <img src="<?php echo UPLOAD_PATH; ?>event/<?php echo $obj->image; ?>" alt="">
-                                            <?php }else{ ?>
-                                                <img src="<?php echo IMG_URL; ?>news-image.jpg" alt="">
-                                            <?php } ?> 
                                         </span>
                                         <span class="content">
                                             <span class="title"><?php echo $obj->title; ?></span>
                                             <span class="event-meta">
-                                                <span class="info"><span class="icon"><i class="fas fa-user"></i></span> <?php echo $obj->event_for ? $obj->event_for : $this->lang->line('all'); ?> (<?php echo $this->lang->line('event_for'); ?>)</span>
-                                                <span class="info"><span class="icon"><i class="far fa-calendar-alt"></i></span> <?php echo date($this->global_setting->date_format, strtotime($obj->event_from)); ?> (<?php echo $this->lang->line('start_date'); ?>)</span>
-                                                <span class="info"><span class="icon"><i class="far fa-calendar-alt"></i></span> <?php echo date($this->global_setting->date_format, strtotime($obj->event_to)); ?> (<?php echo $this->lang->line('end_date'); ?>)</span>
+                                                <span class="info"><span class="icon"><i class="fas fa-user"></i></span> <?php echo $obj->event_for ? $obj->event_for : $this->lang->line('all (event_for)</span>
+                                                <span class="info"><span class="icon"><i class="far fa-calendar-alt"></i></span> <?php echo date($this->global_setting->date_format, strtotime($obj->event_from)); ?> (start_date)</span>
+                                                <span class="info"><span class="icon"><i class="far fa-calendar-alt"></i></span> <?php echo date($this->global_setting->date_format, strtotime($obj->event_to)); ?> (end_date)</span>
                                                 <span class="info"><span class="icon"><i class="fas fa-map-marker-alt"></i></span> <?php echo $obj->event_place; ?></span>
                                             </span>
                                         </span>
                                     </a>
                                 </li>    
-                                <?php } ?>
-                            <?php } ?>
                         </ul>
                     </div>
                 </div>
@@ -68,3 +104,5 @@
         </div>
     </div>
 </section>
+</body>
+</html>

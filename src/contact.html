@@ -1,8 +1,55 @@
-<section class="page-breadcumb-area bg-with-black">
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta charset="ISO-8859-15">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Test file</title>
+        <!--
+        <link rel="stylesheet" href="../assets/css/front/style.css">
+        <link rel="stylesheet" href="../assets/css/front/rtl.css">
+        <link rel="stylesheet" href="../assets/css/rtl/custom-rtl.css">
+    -->
+        <link rel="stylesheet" href="../assets/css/front/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/front/jquery-ui.css">
+        <link rel="stylesheet" href="../assets/css/front/fontawesome-all.min.css">
+        <link rel="stylesheet" href="../assets/css/front/owl.carousel.min.css">
+        <link rel="stylesheet" href="../assets/css/front/animate.css">
+        <link rel="stylesheet" href="../assets/css/front/meanmenu.css">
+        <link rel="stylesheet" href="../assets/css/front/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="../assets/css/front/theme/rebecca-purple.css">
+        <link rel="stylesheet" href="../assets/css/front/responsive.css">
+    
+
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="../assets/js/jquery.validate.js"></script>
+        <script src="../assets/js/script.js"></script>
+
+        <!-- Scripts -->      
+        <script src="../assets/js/front/jquery-ui.js"></script>
+        <script src="../assets/js/front/owl.carousel.min.js"></script>
+        <script src="../assets/js/front/jquery.counterup.min.js"></script>
+        <script src="../assets/js/front/jquery.meanmenu.js"></script>
+        <script src="../assets/js/front/jquery.fancybox.min.js"></script>
+        <script src="../assets/js/front/jquery.scrollUp.js"></script>
+        <script src="../assets/js/front/jquery.waypoints.min.js"></script>
+        <script src="../assets/js/front/popper.min.js"></script>
+        <script src="../assets/js/front/bootstrap.min.js"></script>
+        <script src="../assets/js/front/theme.js"></script> 
+
+    </head>
+    <body>
+        <section class="page-breadcumb-area bg-with-black">
     <div class="container text-center">
         <h2 class="title">Contact Us</h2>
         <ul class="links">
-            <li><a href="<?php echo site_url(); ?>">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="javascript:void(0);">Contact Us</a></li>
         </ul>
     </div>
@@ -10,7 +57,7 @@
 
 <section>
     <div class="container text-center">        
-        <?php $this->load->view('layout/message'); ?> 
+        
     </div>
 </section>
 
@@ -20,44 +67,7 @@
         <div class="row">
             <div class="col-lg-8 col-12">
                 <div class="contact-form-area">
-                <iframe id="contactUsForm" src="https://docs.google.com/forms/d/e/1FAIpQLSdvgaplpWNnGqYpYyYfVldHBbayrFMuDPhiZceMS21xqFpcYg/viewform?embedded=true" width="640" height="911" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                    <!--
-                    <h2 class="contact-page-title">Contact Us 1</h2>
-                    <form action="<?php echo site_url('contact'); ?>" method="post" id="contact_us" name="contact_us" >
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                <div class="contact-input-box">
-                                    <input type="text" name="name" id="name" required="required" placeholder="<?php echo $this->lang->line('name'); ?> *">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                <div class="contact-input-box">
-                                    <input type="email" name="email" id="email" required="required"  placeholder="<?php echo $this->lang->line('email'); ?> *">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                <div class="contact-input-box">
-                                    <input  type="text" name="phone" id="phone" placeholder="<?php echo $this->lang->line('phone'); ?>">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                <div class="contact-input-box">
-                                    <input type="text" name="subject" id="subject"  placeholder="<?php echo $this->lang->line('subject'); ?>">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="contact-input-box">
-                                    <textarea name="message" id="message" required="required"  placeholder="<?php echo $this->lang->line('message'); ?> *"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="contact-input-box text-right">
-                                    <input class="glbscl-link-btn hvr-bs" type="submit" name="submit" id="submit" value="<?php echo $this->lang->line('submit'); ?>">
-                                </div>
-                            </div>
-                        </div>
-                    </form>
--->
+                    <iframe id="contactUsForm" src="https://docs.google.com/forms/d/e/1FAIpQLSdvgaplpWNnGqYpYyYfVldHBbayrFMuDPhiZceMS21xqFpcYg/viewform?embedded=true" width="640" height="911" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                 </div>
             </div>
             <div class="col-lg-4 col-12">
@@ -134,3 +144,5 @@
         color: red;
     }    .freebirdFormviewerViewNumberedItemContainer {width: 45% !important; display: inline-block !important;}.freebirdFormviewerComponentsQuestionBaseRoot {padding: 15px !important;}.freebirdFormviewerComponentsQuestionBaseHeader {margin-bottom: 0px !important;}.quantumWizTextinputPaperinputEl {width: 100% !important;}
 </style>
+    </body>
+    </html>
