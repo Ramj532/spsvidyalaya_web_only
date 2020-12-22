@@ -834,7 +834,7 @@ header {
 /* 1.3 Top Banner */
 
 .top-banner-area {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .top-banner-content {}
@@ -855,6 +855,11 @@ header {
     line-height: 40px;
     margin: 0 0 43px;
     padding: 0 0 17px;
+}
+
+.top-banner-content .subTitle {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .top-banner-content .text {
@@ -898,7 +903,7 @@ header {
 
 .facilities-area {
     background: #f2f2f2 none repeat scroll 0 0;
-    padding: 92px 0 70px;
+    padding: 50px 0 30px;
 }
 
 .section-title {
@@ -1089,7 +1094,7 @@ header {
 
 .achivement-area {
     background: rgba(0, 0, 0, 0) url("../../../../assets/images/front/achivement-bg.jpg") no-repeat fixed center center / cover;
-    padding: 93px 0 68px;
+    padding: 50px 0 30px;
 }
 
 .achivement-area::before {
@@ -2668,4 +2673,7 @@ a {
         padding: 0 5%;
         margin: 0;
     }
+}
+ul li {
+    line-height: 2em;
 }
