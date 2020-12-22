@@ -68,7 +68,7 @@
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-12 col-12 hta-right text-right">
                             <div class="hta-box">
-                                <a class="text" href="../admission-online.html">Admission</a>
+                                <a class="nav-link" style="color:#fff;" href="./src/contact.html">Admission</a>
                             </div>
                         </div>
                     </div>
@@ -77,28 +77,29 @@
             <div class="header-bottom-area">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-3 offset-lg-0 col-md-4 offset-md-3 col-sm-6 col-6">
+                        <div class="col-lg-2 offset-lg-0 col-md-4 offset-md-3 col-sm-6 col-6">
                             <div class="logo1">
                                 <a href="#" style="width:100%;height:100%;position: absolute;">                        
                                     <img style="height:80%;top:10%;position: relative;" src="./assets/images/sps_logo_trans.png" alt=""  />
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-9 offset-lg-0 col-md-8 offset-md-2 col-sm-12 col-12">
+                        <div class="col-lg-10 offset-lg-0 col-md-8 offset-md-2 col-sm-12 col-12">
                             <div class="menu">
                                 <nav id="mobile_menu_active">
                                     <ul id="menu">
                                         <li><a class="nav-link" href="./src/home.html">Home</a></li>
-                                        <li><a href="#">Announcement <span class="icon fas fa-chevron-down"></span></a>
+                                        <!-- <li><a href="#">Announcement <span class="icon fas fa-chevron-down"></span></a>
                                             <ul class="drop">
                                                 <li><a class="nav-link" href="./src/news.html">News</a></li>
                                                 <li><a class="nav-link" href="./src/notice.html">Notice</a></li>
                                                 <li><a class="nav-link" href="./src/holiday.html">Holiday</a></li>
                                             </ul>                                
                                         </li>
+                                    -->
                                         <li><a class="nav-link" href="./src/event.html">Events</a></li>
-                                        <li><a class="nav-link" href="./src/gallery.html">Galleries</a></li>
-                                        <li><a class="nav-link" href="./src/teacher.html">Teachers</a></li>
+                                        <li><a class="nav-link1" href="./src/gallery.html">Galleries</a></li>
+                                        <li><a class="nav-link" href="./src/teacher.html">Staff</a></li>
                                         <!--
                                         <li><a href="staff">Staff</a></li>
                                     -->
@@ -188,6 +189,8 @@
                     </p>
                 </div>
             </div>
+            <?php echo '<p style="display: none;">Hello World</p>'; ?>
+
         </footer>
         <?php echo '<p style="display: none;">Hello World</p>'; ?>
         <script>
