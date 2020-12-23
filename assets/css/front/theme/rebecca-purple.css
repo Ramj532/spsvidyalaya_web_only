@@ -876,6 +876,7 @@ header {
     padding: 20px 26px;
     position: relative;
     z-index: 3;
+    top: 10%;
 }
 
 .top-banner-img::before {
@@ -1505,6 +1506,7 @@ footer {}
     font-weight: 600;
     line-height: 45px;
     text-decoration: underline;
+    margin: 0 !important;
 }
 
 .page-breadcumb-area .links {
@@ -2677,3 +2679,34 @@ a {
 ul li {
     line-height: 2em;
 }
+
+.carouselImage {
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+.height50 { height: 50% !important; }
+.height55 { height: 55% !important; }
+.height60 { height: 60% !important; }
+.height65 { height: 65% !important; }
+.height70 { height: 70% !important; }
+.height75 { height: 75% !important; }
+.height80 { height: 80% !important; }
+.height85 { height: 85% !important; }
+.height90 { height: 90% !important; }
+.height95 { height: 95% !important; }
+.height100 { height: 100% !important; }
+
+.width50 { width: 50% !important; }
+.width55 { width: 55% !important; }
+.width60 { width: 60% !important; }
+.width65 { width: 65% !important; }
+.width70 { width: 70% !important; }
+.width75 { width: 75% !important; }
+.width80 { width: 80% !important; }
+.width85 { width: 85% !important; }
+.width90 { width: 90% !important; }
+.width95 { width: 95% !important; }
+.width100 { width: 100% !important; }
+
