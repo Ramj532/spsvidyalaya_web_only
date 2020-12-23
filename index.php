@@ -12,14 +12,15 @@
         <link rel="stylesheet" href="./assets/css/rtl/custom-rtl.css">
     -->
         <link rel="stylesheet" href="./assets/css/front/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/front/bootstrap-theme.min.css">
         <link rel="stylesheet" href="./assets/css/front/jquery-ui.css">
         <link rel="stylesheet" href="./assets/css/front/fontawesome-all.min.css">
-        <link rel="stylesheet" href="./assets/css/front/owl.carousel.min.css">
         <link rel="stylesheet" href="./assets/css/front/animate.css">
         <link rel="stylesheet" href="./assets/css/front/meanmenu.css">
         <link rel="stylesheet" href="./assets/css/front/jquery.fancybox.min.css">
         <link rel="stylesheet" href="./assets/css/front/theme/rebecca-purple.css">
         <link rel="stylesheet" href="./assets/css/front/responsive.css">
+        
     
 
         <!--[if lt IE 9]>
@@ -33,7 +34,6 @@
 
         <!-- Scripts -->      
         <script src="./assets/js/front/jquery-ui.js"></script>
-        <script src="./assets/js/front/owl.carousel.min.js"></script>
         <script src="./assets/js/front/jquery.counterup.min.js"></script>
         <script src="./assets/js/front/jquery.meanmenu.js"></script>
         <script src="./assets/js/front/jquery.fancybox.min.js"></script>
@@ -77,14 +77,14 @@
             <div class="header-bottom-area">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-2 offset-lg-0 col-md-4 offset-md-3 col-sm-6 col-6">
+                        <div class="col-lg-3 offset-lg-0 col-md-4 offset-md-3 col-sm-6 col-6">
                             <div class="logo1">
                                 <a href="#" style="width:100%;height:100%;position: absolute;">                        
                                     <img style="height:80%;top:10%;position: relative;" src="./assets/images/sps_logo_trans.png" alt=""  />
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-10 offset-lg-0 col-md-8 offset-md-2 col-sm-12 col-12">
+                        <div class="col-lg-9 offset-lg-0 col-md-8 offset-md-2 col-sm-12 col-12">
                             <div class="menu">
                                 <nav id="mobile_menu_active">
                                     <ul id="menu">
@@ -97,8 +97,9 @@
                                             </ul>                                
                                         </li>
                                     -->
+                                        <li><a class="nav-link" href="./src/brochure.html">Brochures</a></li>
                                         <li><a class="nav-link" href="./src/event.html">Events</a></li>
-                                        <li><a class="nav-link1" href="./src/gallery.html">Galleries</a></li>
+                                        <li><a class="nav-link" href="./src/gallery.html">Galleries</a></li>
                                         <li><a class="nav-link" href="./src/teacher.html">Staff</a></li>
                                         <!--
                                         <li><a href="staff">Staff</a></li>
@@ -189,18 +190,11 @@
                     </p>
                 </div>
             </div>
-            <?php echo '<p style="display: none;">Hello World</p>'; ?>
-
         </footer>
         <?php echo '<p style="display: none;">Hello World</p>'; ?>
         <script>
             $(document).ready(function(){
-                setTimeout(
-                $("#content-wrapper-frame").on("load", function() {
-                    let head = $("#content-wrapper-frame").find("head");
-                    let css = '<link rel="stylesheet" href="./assets/css/front/bootstrap.min.css"> <link rel="stylesheet" href="./assets/css/front/jquery-ui.css"> <link rel="stylesheet" href="./assets/css/front/fontawesome-all.min.css"> <link rel="stylesheet" href=../assets/css/front/owl.carousel.min.css"> <link rel="stylesheet" href="./assets/css/front/animate.css"> <link rel="stylesheet" href="./assets/css/front/meanmenu.css"> <link rel="stylesheet" href="./assets/css/front/jquery.fancybox.min.css"> <link rel="stylesheet" href="./assets/css/front/theme/rebecca-purple.css"> <link rel="stylesheet" href="./assets/css/front/responsive.css">';
-                    $(head).append(css);
-                }),0);
+                
                 $('.nav-link').click(function(e){
                     e.preventDefault();
                     $("#content-wrapper-frame").attr("src", $(this).attr("href"));
