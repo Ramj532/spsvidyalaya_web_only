@@ -869,6 +869,7 @@ header {
     padding: 20px 26px;
     position: relative;
     z-index: 3;
+    top: 10%;
 }
 
 .top-banner-img::before {
