@@ -838,11 +838,12 @@ header {
 .top-banner-content {}
 
 .top-banner-content .intro {
-    color: #2489e5;
+    color: #C02929;
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
     margin: 0 0 11px;
+    font-weight: bold;
 }
 
 .top-banner-content .title {
