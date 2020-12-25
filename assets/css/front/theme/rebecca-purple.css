@@ -639,11 +639,21 @@ header {
 .menu ul li a {
     color: #ffffff;
     display: block;
-    font-size: 18px;
     letter-spacing: 0;
-    line-height: 24px;
-    padding: 38px 8px;
+    padding: 20px 8px;
     text-transform: capitalize;
+
+    border: 1px solid;
+    line-height: 1px;
+    border-radius: 25%;
+    text-align: center;
+    width: 100px;
+}
+
+.menu ul li a.active {
+    border: 2px solid;
+    font-weight: bold;
+    background-color: #9c75c4;
 }
 
 
@@ -2710,3 +2720,9 @@ ul li {
 .width95 { width: 95% !important; }
 .width100 { width: 100% !important; }
 
+.pad20 { padding: 20px; }
+
+.noSidePad { padding-left: 0; padding-right: 0; }
+
+.border1 { border: 1px solid; }
+.border2 { border: 2px solid !important; }
