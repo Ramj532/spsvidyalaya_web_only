@@ -58,8 +58,8 @@
                                 <p class="text">9392038363</p>
                             </div> 
                             <div class="hta-box"> 
-                                <span class="icon"><i class="fab fa-wapp"></i></span>
-                                <p class="text">8970897995</p> 
+                                <a href="https://wa.link/x13hy2"><span class="icon"><i class="fab fa-wapp"></i></span>
+                                <p class="text">8970897995</p> </a>
                             </div>
                             <div class="hta-box">
                                 <span class="icon"><i class="fas fa-envelope"></i></span>
@@ -84,11 +84,11 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-9 offset-lg-0 col-md-8 offset-md-2 col-sm-12 col-12">
+                        <div class="col-lg-9 offset-lg-0 col-md-8 offset-md-2 col-sm-12 col-12 pad20 noSidePad">
                             <div class="menu">
                                 <nav id="mobile_menu_active">
                                     <ul id="menu">
-                                        <li><a class="nav-link" href="./src/home.html">Home</a></li>
+                                        <li><a class="nav-link active" href="./src/home.html">Home</a></li>
                                         <!-- <li><a href="#">Announcement <span class="icon fas fa-chevron-down"></span></a>
                                             <ul class="drop">
                                                 <li><a class="nav-link" href="./src/news.html">News</a></li>
@@ -124,32 +124,27 @@
                         <div class="col-lg-3 col-md-7 col-sm-7 col-12">
                             <div class="footer-widget">
                                 <div class="fw-logo">
-                                    <img src="./assets/images/sps-logo1.png" alt="" style="height:100%;width:60%" />
+                                    <img src="./assets/images/sps-logo1.png" alt="" style="height:100%;width:35%" />
                                 </div>
                                 <p class="text" style="font-weight: bold; font-size:1.5em;">
                                     Sri Padmavathi school
                                 </p>
                             </div>
                         </div>
-                    <!--     <div class="col-lg-3 col-md-5 col-sm-5 col-12">
+                        <div class="col-lg-3 col-md-5 col-sm-5 col-12">
                             <div class="footer-widget">
                                 <h2 class="fw-title"> <span>Quick_link</span></h2>
                                 <ul class="links">
-                                    <li><a href="Admission-online">Aadmission</a></li>
-                                    <li><a href="news">news</a></li>
-                                    <li><a href="notice">notice</a></li>
-                                    <li><a href="holiday">holiday</a></li>
-                                    <li><a href="events">event</a></li>
-                                    <li><a href="galleries">gallery</a></li>
-                                    <li><a href="teachers">teacher</a></li>
-                                    <li><a href="staff">staff</a></li>
-                                    <li><a href="contact">contact_us</a></li>
-       
-                                    <li><a href="page/'.$obj->page_slug">Page_title</a></li>
-                                
+                                    <li><a href="./src/contact.html">Aadmission</a></li>
+                                    <li><a href="./src/brochure.html">Brochures</a></li>
+                                    <li><a href="./src/event.html">Events</a></li>
+                                    <li><a href="./src/gallery.html">Gallery</a></li>
+                                    <li><a href="./src/teacher.html">Staff</a></li>
+                                    <li><a href="./src/contact.html">Contact Us</a></li>
+                                    <li><span style="color:#fff">Whatsapp contact : </span><img width="25%" src="./assets/images/wapp_barcode.jpeg" /></li>
                                 </ul>
                             </div>
-                        </div>-->
+                        </div>
                         <div class="col-lg-3 col-md-5 col-sm-5 col-12">
                             <div class="footer-widget">
                                 <h2 class="fw-title">Social Links</h2>
@@ -196,9 +191,10 @@
                 
                 $('.nav-link').click(function(e){
                     e.preventDefault();
+                    $('.nav-link').removeClass('active');
+                    $(this).addClass('active');
                     $("#content-wrapper-frame").attr("src", $(this).attr("href"));
                 });
- 
             });
             
         </script>

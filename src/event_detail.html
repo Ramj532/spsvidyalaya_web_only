@@ -21,19 +21,18 @@
         <link rel="stylesheet" href="../assets/css/front/theme/rebecca-purple.css">
         <link rel="stylesheet" href="../assets/css/front/responsive.css">
 
-        <!-- Scripts      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <script src="../assets/js/jquery.validate.js"></script> 
-        <script src="../assets/js/front/jquery-ui.js"></script>
-        <script src="../assets/js/front/owl.carousel.min.js"></script>
-        <script src="../assets/js/front/jquery.counterup.min.js"></script>
-        <script src="../assets/js/front/jquery.meanmenu.js"></script>
-        <script src="../assets/js/front/jquery.fancybox.min.js"></script>
-        <script src="../assets/js/front/jquery.scrollUp.js"></script>
-        <script src="../assets/js/front/jquery.waypoints.min.js"></script>
-        <script src="../assets/js/front/popper.min.js"></script>
-        <script src="../assets/js/front/bootstrap.min.js"></script>
-        <script src="../assets/js/front/theme.js"></script> -->
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../assets/carousel/docs.theme.min.css">
 
+        <link rel="stylesheet" href="../assets/carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="../assets/carousel/owl.theme.default.min.css">
+        
+        <script src="../assets/carousel/jquery.min.js"></script>
+        <script src="../assets/carousel/owl.carousel.js"></script>
+
+        <script>
+            var school_images = [ { height: "450px", imgClass: "width100 height100 carouselImage", imageName: "image1.JPG" }, { height: "350px", imgClass: "width100 height100 carouselImage", imageName: "image2.JPG" }, { height: "350px", imgClass: "width100 height100 carouselImage", imageName: "image3.JPG" }, { height: "350px", imgClass: "width100 height100 carouselImage", imageName: "image4.JPG" }];
+        </script>
     </head>
     <body>
         <section class="page-breadcumb-area bg-with-black">
@@ -49,11 +48,18 @@
 <section class="page-event-details-area">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                 <div class="page-event-details">
-                    <div class="banner">
-                            <img src="../assets/uploads/event/event-1607873154-sms.jpg" alt="">
-                    </div>
+                    <section id="events" class="banner">
+                        <div></div>
+                        <div class="row" style="max-width: 90%;">
+                            <div class="large-12 columns">
+                                <div class="owl-carousel owl-theme" id="event1" style="margin:0">
+                                                         
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                     <h2 class="title">Title</h2>
                     <ul class="event-meta">
                         <li class="info"><span class="icon"><i class="fas fa-user"></i></span> Event for: Childrens day celebrations</li>
@@ -65,7 +71,7 @@
                     <div class="text">Childrens day celebrations</div>
                 </div>
             </div>
-            
+            <!--
             <div class="col-lg-4 offset-lg-0 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-12">
                 <div class="sidebar">
                     <div class="sidebar-widget">
@@ -91,9 +97,44 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
+
+<script>
+    $(document).ready(function() {
+        $.each( school_images, function( key, value ) {
+            var item="";
+            item += '<div class="item" style="height:' + value.height +'"> <img src="../assets/images/events/'+ value.imageName +'" class="'+ value.imgClass +'" alt="" /></div>'
+            $('#event1').append(item);
+        });
+        $('.owl-carousel').owlCarousel({
+            items:2,
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoHeight: true,   
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:1,
+                    nav:true
+                },
+                1000:{
+                    items:2,
+                    nav:true,
+                    loop:true
+                }
+            }
+        })
+    });
+</script>
 </body>
 </html>
