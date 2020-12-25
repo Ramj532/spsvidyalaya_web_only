@@ -80,7 +80,7 @@
                         <div class="col-lg-3 offset-lg-0 col-md-4 offset-md-3 col-sm-6 col-6">
                             <div class="logo1">
                                 <a href="#" style="width:100%;height:100%;position: absolute;">                        
-                                    <img style="height:80%;top:10%;position: relative;" src="./assets/images/sps_logo_white.png" alt=""  />
+                                    <img style="height:80%;top:10%;position: relative;" src="./assets/images/sps_logo_white.jpg" alt=""  />
                                 </a>
                             </div>
                         </div>
