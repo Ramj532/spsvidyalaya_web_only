@@ -650,15 +650,16 @@ header {
     width: 100px;
 }
 
-.menu ul li a.active {
+.menu ul li a.active, nav.mean-nav #menu li a.active {
     border: 2px solid;
     font-weight: bold;
     background-color: #c02929;
 }
 
 
-.menu ul li:hover a {
+.menu ul li:hover a,  nav.mean-nav #menu li:hover a {
     text-shadow: 1px 1px #1bccfc;
+    background-color: #c02929
 }
 
 .menu ul li a .icon {
@@ -752,6 +753,16 @@ header {
 
 .menu ul li .drop li .third li:hover a {
     color: #1bccfc;
+}
+
+nav.mean-nav #menu li a {
+    border-radius: 0px;
+}
+
+nav.mean-nav #menu li a.active {
+    border: 2px solid;
+    font-weight: bold;
+    background-color: #c02929;
 }
 
 .mean-container .mean-bar::after {
@@ -859,7 +870,7 @@ header {
 }
 
 .top-banner-content .title {
-    border-bottom: 1px solid #002B46;
+    /* border-bottom: 1px solid #002B46;*/
     color: #474747;
     font-size: 42px;
     font-weight: 600;
@@ -915,11 +926,11 @@ header {
 
 .facilities-area {
     background: #f2f2f2 none repeat scroll 0 0;
-    padding: 50px 0 30px;
+    padding: 20px 0 30px;
 }
 
 .section-title {
-    margin: 0 0 60px;
+    margin: 0 0 30px;
 }
 
 .section-title .title {
@@ -961,13 +972,13 @@ header {
 }
 
 .section-title .title .inner {
-    color: #002B46;
+    color: #c02929;
 }
 
 .single-faclities {
     background: #002B46 none repeat scroll 0 0;
     cursor: pointer;
-    margin: 0 0 30px;
+    /*margin: 0 0 30px; */
     padding: 27px 0 26px;
     text-align: center;
     -webkit-transition: all 0.3s ease 0s;
@@ -1106,7 +1117,7 @@ header {
 
 .achivement-area {
     background: rgba(0, 0, 0, 0) url("../../../../assets/images/front/achivement-bg.jpg") no-repeat fixed center center / cover;
-    padding: 50px 0 30px;
+    padding: 20px 0 30px;
 }
 
 .achivement-area::before {
@@ -1386,7 +1397,7 @@ footer {}
 
 .footer-top-area {
     background: #c02929  none repeat scroll 0 0;
-    padding: 60px 0 18px;
+    padding: 30px 0 18px;
 }
 
 .footer-widget {
@@ -2727,3 +2738,43 @@ ul li {
 
 .border1 { border: 1px solid; }
 .border2 { border: 2px solid !important; }
+
+
+.buttonWrapper {
+    padding: 25px 0px;
+}
+
+#content-placeholder {
+    height: 100vw;
+}
+
+.logoWrapper .logo {
+    background-image: url('../../../images/sps_logo_bg_blue.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+}
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+    .buttonWrapper {
+        padding: 0px;
+    }
+    .logoWrapper .logo {
+        background-image: url('../../../images/sps-only-logo.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100%;
+    }
+    #content-placeholder {
+        height: 100vh;
+    }
+    .logoContainer {
+        display: none;
+    }
+    .hta-box .text {
+        display: none;
+    }
+    .hta-box .icon {
+        padding-left: 10px;
+    }
+}
