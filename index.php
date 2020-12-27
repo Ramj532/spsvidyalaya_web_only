@@ -44,8 +44,14 @@
                             </div>
                             <div class="hta-box">
                                 <a href="tel:9392038363">
-                                    <span class="icon"><i class="fas fa-phone"></i></span>
+                                    <span class="icon"><i class="fas fa-phone"><sup>1</sup></i></span>
                                     <p class="text">9392038363</p>
+                                </a>
+                            </div> 
+                            <div class="hta-box">
+                                <a href="tel:9392040890">
+                                    <span class="icon"><i class="fas fa-phone"><sup>2</sup></i></span>
+                                    <p class="text">9392040890</p>
                                 </a>
                             </div> 
                             <div class="hta-box"> 
@@ -63,7 +69,7 @@
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-6 col-6 hta-right text-right">
                             <div class="hta-box">
-                                <a class="nav-link" style="color:#fff;" href="./src/contact.html">Admission</a>
+                                <a class="nav-link" style="color:#fff; border-radius:25px; border:1px solid #fff;" href="" src="./src/contact.html">Admission</a>
                             </div>
                         </div>
                     </div>
@@ -83,12 +89,12 @@
                             <div class="menu">
                                 <nav id="mobile_menu_active">
                                     <ul id="menu">
-                                        <li><a class="nav-link active" href="./src/home.html">Home</a></li>
-                                        <li><a class="nav-link" href="./src/brochure.html">Brochures</a></li>
-                                        <li><a class="nav-link" href="./src/event.html">Events</a></li>
-                                        <li><a class="nav-link" href="./src/gallery.html">Galleries</a></li>
-                                        <li><a class="nav-link" href="./src/teacher.html">Staff</a></li>
-                                        <li><a class="nav-link" href="./src/contact.html">Contact us</a></li>
+                                        <li><a class="nav-link active" href="" src="./src/home.html">Home</a></li>
+                                        <li><a class="nav-link" href="" src="./src/brochure.html">Brochures</a></li>
+                                        <li><a class="nav-link" href="" src="./src/event.html">Events</a></li>
+                                        <li><a class="nav-link" href="" src="./src/gallery.html">Galleries</a></li>
+                                        <li><a class="nav-link" href="" src="./src/teacher.html">Staff</a></li>
+                                        <li><a class="nav-link" href="" src="./src/contact.html">Contact us</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -118,12 +124,12 @@
                             <div class="footer-widget">
                                 <h2 class="fw-title"> <span>Quick_link</span></h2>
                                 <ul class="links">
-                                    <li><a href="./src/contact.html">Admission</a></li>
-                                    <li><a href="./src/brochure.html">Brochures</a></li>
-                                    <li><a href="./src/event.html">Events</a></li>
-                                    <li><a href="./src/gallery.html">Gallery</a></li>
-                                    <li><a href="./src/teacher.html">Staff</a></li>
-                                    <li><a href="./src/contact.html">Contact Us</a></li>
+                                    <li><a href="" src="./src/contact.html">Admission</a></li>
+                                    <li><a href="" src="./src/brochure.html">Brochures</a></li>
+                                    <li><a href="" src="./src/event.html">Events</a></li>
+                                    <li><a href="" src="./src/gallery.html">Gallery</a></li>
+                                    <li><a href="" src="./src/teacher.html">Staff</a></li>
+                                    <li><a href="" src="./src/contact.html">Contact Us</a></li>
                                     <li><span style="color:#fff">Whatsapp contact : </span><img width="25%" src="./assets/images/wapp_barcode.jpeg" /></li>
                                 </ul>
                             </div>
@@ -133,12 +139,13 @@
                                 <h2 class="fw-title">Social Links</h2>
                                 <ul class="social">
                                     <li><a href="https://www.facebook.com/spsctvl/?ti=as" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="twitter_url" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                    <!--<li><a href="twitter_url" target="_blank"><i class="fab fa-twitter"></i></a></li>
                                     <li><a href="linkedin_url" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
                                     <li><a href="google_plus_url" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
                                     <li><a href="youtube_url" target="_blank"><i class="fab fa-youtube"></i></a></li>
                                     <li><a href="instagram_url" target="_blank"><i class="fab fa-instagram"></i></a></li>
                                     <li><a href="pinterest_url" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
+                                    -->
                                 </ul>
                             </div>
                         </div>
@@ -146,8 +153,11 @@
                             <div class="footer-widget">
                                 <h2 class="fw-title">Get In Touch</h2>
                                 <ul class="address">
-                                    <li><span class="icon"><i class="fas fa-phone"></i></span> 
+                                    <li><span class="icon"><i class="fas fa-phone"><sup>1</sup></i></span> 
                                         9392038363
+                                    </li>
+                                    <li><span class="icon"><i class="fas fa-phone"><sup>2</sup></i></span> 
+                                        9392040890
                                     </li>
                                     <li><span class="icon"><i class="fas fa-envelope"></i></span>
                                         sripadmavathictvl@gmail.com
@@ -183,12 +193,20 @@
         <script src="./assets/js/front/theme.js"></script> 
         <script>
             $(document).ready(function(){
-                
+                window.scrollTo({top: 0, behavior: 'smooth'});
                 $('.nav-link').click(function(e){
                     e.preventDefault();
                     $('.nav-link').removeClass('active');
                     $(this).addClass('active');
-                    $("#content-wrapper-frame").attr("src", $(this).attr("href"));
+                    $("#content-wrapper-frame").attr("src", $(this).attr("src"));
+                    window.scrollTo({top: 0, behavior: 'smooth'});
+                });
+
+                $(".footer-widget .links a").click(function(e) {
+                    e.preventDefault();
+                    $("#content-wrapper-frame").attr("src", $(this).attr("src"));
+        
+                    window.scrollTo({top: 0, behavior: 'smooth'});
                 });
 
                 $('.mean-nav #menu li a.nav-link').click(function(e) {

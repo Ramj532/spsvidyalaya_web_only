@@ -645,7 +645,7 @@ header {
 
     border: 1px solid;
     line-height: 1px;
-    border-radius: 25%;
+    border-radius: 25px;
     text-align: center;
     width: 100px;
 }
@@ -2738,7 +2738,6 @@ ul li {
 
 .border1 { border: 1px solid; }
 .border2 { border: 2px solid !important; }
-
 
 .buttonWrapper {
     padding: 25px 0px;
