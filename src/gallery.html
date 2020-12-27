@@ -46,8 +46,8 @@
             </div>
         </section>
 
-        <section id="college_Infrastructure">
-            <div>College Infrastructure</div>
+        <section id="college_gallery>
+            <div class="row pad20" style="font-weight: bold; font-size: 1.5em;">College Infrastructure</div>
             <div class="row" style="max-width: 90%;">
                 <div class="large-12 columns">
                     <div class="owl-carousel owl-theme" id="event1" style="margin:0">
@@ -58,17 +58,36 @@
         </section>
         
         <script>
+            function detectMob() {
+                const toMatch = [
+                    /Android/i,
+                    /webOS/i,
+                    /iPhone/i,
+                    /iPad/i,
+                    /iPod/i,
+                    /BlackBerry/i,
+                    /Windows Phone/i
+                ];
+            
+                return toMatch.some((toMatchItem) => {
+                    return navigator.userAgent.match(toMatchItem);
+                });
+            }
             $(document).ready(function() {
                 $.each( school_images, function( key, value ) {
                     var item="";
                     item += '<div class="item" style="height:' + value.height +'"> <img src="../assets/images/sps_gallery/'+ value.imageName +'" class="'+ value.imgClass +'" alt="" /></div>'
                     $('#event1').append(item);
                 });
+
+                if( detectMob() ) {
+                    $('#college_gallery .item img').removeClass('width80').addClass('width100')
+                }
                 $('.owl-carousel').owlCarousel({
                     items:3,
                     loop:true,
                     margin:10,
-                    autoplay:true,
+                    autoplay:false,
                     autoHeight: true,   
                     autoplayTimeout:3000,
                     autoplayHoverPause:true,

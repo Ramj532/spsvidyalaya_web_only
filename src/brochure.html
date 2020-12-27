@@ -45,32 +45,49 @@
             <div class="row">
                 <div class="large-12 columns">
                     <div class="owl-carousel owl-theme">
-                    <div class="item" style="height:400px">
-                        <img src="../assets/images/school_building/sps_building.jpg" class="width85 height100 carouselImage"  alt="" />
+                    <div class="item height_style_1">
+                        <img src="../assets/images/school_building/sps_building.jpg" class="width80 height100 carouselImage"  alt="" />
                     </div>
-                    <div class="item" style="height:400px">
-                        <img src="../assets/images/school_building/banner01.png" class="width85 height100 carouselImage" alt="" />
+                    <div class="item height_style_1">
+                        <img src="../assets/images/school_building/banner01.png" class="width80 height100 carouselImage" alt="" />
                     </div>
-                    <div class="item" style="height:400px">
-                        <img src="../assets/images/school_building/banner02.jpg"  class="width85 height100 carouselImage" alt="" />
+                    <div class="item height_style_1">
+                        <img src="../assets/images/school_building/banner02.jpg"  class="width80 height100 carouselImage" alt="" />
                     </div>
-                    <div class="item" style="height:800px">
-                        <img src="../assets/images/school_building/banner03.jpg"  class="width60 height100 carouselImage" alt="" />
+                    <div class="item height_style_2">
+                        <img src="../assets/images/school_building/banner03.jpg"  class="width80 height100 carouselImage" alt="" />
                     </div>
-                    <div class="item" style="height:800px">
-                        <img src="../assets/images/school_building/banner04.jpg"  class="width60 height100 carouselImage" alt="" />
+                    <div class="item height_style_2">
+                        <img src="../assets/images/school_building/banner04.jpg"  class="width80 height100 carouselImage" alt="" />
                     </div>
                     </div>
                 </div>
             </div>
         </section>
-
         <script>
+            function detectMob() {
+                const toMatch = [
+                    /Android/i,
+                    /webOS/i,
+                    /iPhone/i,
+                    /iPad/i,
+                    /iPod/i,
+                    /BlackBerry/i,
+                    /Windows Phone/i
+                ];
+            
+                return toMatch.some((toMatchItem) => {
+                    return navigator.userAgent.match(toMatchItem);
+                });
+            }
+            if( detectMob() ) {
+                $('#brochures .item img').removeClass('width80').addClass('width100')
+            }
             $('.owl-carousel').owlCarousel({
                 items:1,
                 loop:true,
                 margin:10,
-                autoplay:true,
+                autoplay:false,
                 autoHeight: true,   
                 autoplayTimeout:3000,
                 autoplayHoverPause:true,
