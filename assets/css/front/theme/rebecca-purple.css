@@ -1931,7 +1931,7 @@ footer {}
 /*----------------------------------------*/
 
 .page-teacher-area {
-    padding: 100px 0 70px;
+    padding: 50px 0 30px;
 }
 
 /* .single-teacher {
@@ -2074,7 +2074,7 @@ footer {}
     display: -o-flex;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 0 97px;
+    padding: 0 0 67px;
     text-align: left;
 }
 
@@ -2181,7 +2181,7 @@ footer {}
 
 .single-team .st-content .contact {
     list-style: outside none none;
-    padding: 16px 0px;
+    padding: 0px 0px;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
@@ -2190,7 +2190,7 @@ footer {}
 .single-team .st-content .contact li {
     color: #333333;
     display: block;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 0;
     line-height: 28px;
     padding-left: 22px;
@@ -2755,6 +2755,14 @@ ul li {
     height: 100%;
 }
 
+#brochures .height_style_1 {
+    height: 400px;
+}
+
+#brochures .height_style_2 {
+    height: 800px;
+}
+
 @media only screen and (min-width: 240px) and (max-width: 480px) {
     .buttonWrapper {
         padding: 0px;
@@ -2777,4 +2785,17 @@ ul li {
     .hta-box .icon {
         padding-left: 10px;
     }
+
+    #brochures .height_style_1 {
+        height: 200px;
+    }
+
+    #brochures .height_style_2 {
+        height: 400px;
+    }
+
+    .page-breadcumb-area {
+        padding: 15px 0 15px;
+    }
 }
+

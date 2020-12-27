@@ -170,7 +170,8 @@
             </div>
             <?php echo '<p style="display: none;">Hello World</p>'; ?>
         </footer>
-        <!-- Scripts -->      
+        <!-- Scripts -->
+        
         <script src="./assets/js/front/jquery-ui.js"></script>
         <script src="./assets/js/front/jquery.counterup.min.js"></script>
         <script src="./assets/js/front/jquery.meanmenu.js"></script>
