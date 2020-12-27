@@ -45,25 +45,25 @@
                             <div class="hta-box">
                                 <a href="tel:9392038363">
                                     <span class="icon"><i class="fas fa-phone"><sup>1</sup></i></span>
-                                    <p class="text">9392038363</p>
+                                    <p class="text" style="text-decoration: underline;">9392038363</p>
                                 </a>
                             </div> 
                             <div class="hta-box">
                                 <a href="tel:9392040890">
                                     <span class="icon"><i class="fas fa-phone"><sup>2</sup></i></span>
-                                    <p class="text">9392040890</p>
+                                    <p class="text" style="text-decoration: underline;">9392040890</p>
                                 </a>
                             </div> 
                             <div class="hta-box"> 
                                 <a href="https://wa.link/x13hy2" target="_blank">
                                     <span class="icon"><i class="fab fa-wapp"></i></span>
-                                    <p class="text">8970897995</p>
+                                    <p class="text" style="text-decoration: underline;">8970897995</p>
                                 </a>
                             </div>
                             <div class="hta-box">
                                 <a href="mailto:sripadmavathictvl@gmail.com" target="_blank">
                                     <span class="icon"><i class="fas fa-envelope"></i></span>
-                                    <p class="text">sripadmavathictvl@gmail.com</p>
+                                    <p class="text" style="text-decoration: underline;">sripadmavathictvl@gmail.com</p>
                                 </a>
                             </div>                    
                         </div>
