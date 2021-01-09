@@ -21,10 +21,10 @@
         <link rel="stylesheet" href="./assets/css/front/theme/rebecca-purple.css">
         <link rel="stylesheet" href="./assets/css/front/responsive.css">
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="../assets/carousel/docs.theme.min.css">
+        <link rel="stylesheet" href="./assets/carousel/docs.theme.min.css">
 
-        <link rel="stylesheet" href="../assets/carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="../assets/carousel/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./assets/carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="./assets/carousel/owl.theme.default.min.css">
     
 
         <!--[if lt IE 9]>
