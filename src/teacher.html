@@ -254,3 +254,13 @@
         </div>
     </div>
 </section>
+
+<script>
+    $(document).ready(function(){
+        window.scrollTo({top: 0, behavior: 'smooth'});
+        $('.mean-nav #menu li a.nav-link').click(function(e) {
+            e.preventDefault();
+            $(".meanclose").click();
+        });
+    });
+</script>

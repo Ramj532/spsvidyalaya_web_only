@@ -37,6 +37,12 @@
             </div>
         </section>
         <script>
+            $(document).ready(function() {
+                $('.mean-nav #menu li a.nav-link').click(function(e) {
+                    e.preventDefault();
+                    $(".meanclose").click();
+                });
+            });
             function detectMob() {
                 const toMatch = [
                     /Android/i,
