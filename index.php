@@ -208,8 +208,9 @@
                     e.preventDefault();
                     $('.nav-link').removeClass('active');
                     $(this).addClass('active');
-                    $('#content-placeholder').load($(this).attr('src'));
                     $(".meanclose").click();
+                    $('#content-placeholder').load($(this).attr('src'));
+                    
                     //$("#content-wrapper-frame").attr("src", $(this).attr("src"));
                     window.scrollTo({top: 0, behavior: 'smooth'});
                 });
