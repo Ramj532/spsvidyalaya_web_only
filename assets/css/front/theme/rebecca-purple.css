@@ -2762,6 +2762,10 @@ ul li {
     height: 800px;
 }
 
+.row {
+    max-width: none !important;
+}
+
 @media only screen and (min-width: 240px) and (max-width: 480px) {
     .buttonWrapper {
         padding: 0px;
