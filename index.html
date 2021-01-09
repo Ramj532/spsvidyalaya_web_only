@@ -103,7 +103,9 @@
                 </div>
             </div>
             <div id="content-placeholder">
-                <iframe id="content-wrapper-frame" src="./src/home.html" frameborder="0" width="100%" height="100%"></iframe> 
+                <!--
+                <iframe id="content-wrapper-frame" src="./src/home.html" frameborder="0" width="100%" height="100%" seamless></iframe> 
+                -->
             </div>
         </header>
         <footer>
@@ -212,8 +214,10 @@
                     e.preventDefault();
                     $(".meanclose").click();
                 });
+
+                $('#content-placeholder').load('./src/home.html')
             });
-            
+
         </script>
     </body>
 </html>
