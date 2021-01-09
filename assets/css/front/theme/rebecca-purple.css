@@ -2742,11 +2742,11 @@ ul li {
 .buttonWrapper {
     padding: 25px 0px;
 }
-
+/*
 #content-placeholder {
     height: 100vw;
 }
-
+*/
 .logoWrapper .logo {
     background-image: url('../../../images/sps_logo_bg_blue.jpeg');
     background-repeat: no-repeat;
@@ -2772,9 +2772,10 @@ ul li {
         background-size: contain;
         height: 100%;
     }
+    /*
     #content-placeholder {
         height: 100vh;
-    }
+    } */
     .logoContainer {
         display: none;
     }
