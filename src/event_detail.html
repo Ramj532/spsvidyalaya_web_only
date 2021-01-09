@@ -76,6 +76,10 @@
 
 <script>
     $(document).ready(function() {
+        $('.mean-nav #menu li a.nav-link').click(function(e) {
+            e.preventDefault();
+            $(".meanclose").click();
+        });
         $.each( school_images, function( key, value ) {
             var item="";
             item += '<div class="item" style="height:' + value.height +'"> <img src="../assets/images/events/'+ value.imageName +'" class="'+ value.imgClass +'" alt="" /></div>'

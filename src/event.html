@@ -38,6 +38,10 @@
         $('.link').click(function(){
             $('#content-placeholder').load($(this).attr('src'));
         });
+        $('.mean-nav #menu li a.nav-link').click(function(e) {
+            e.preventDefault();
+            $(".meanclose").click();
+        });
         window.scrollTo({top: 0, behavior: 'smooth'});
     });
 </script>
