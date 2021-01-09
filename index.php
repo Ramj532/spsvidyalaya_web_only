@@ -128,7 +128,7 @@
                         </div>
                         <div class="col-lg-3 col-md-5 col-sm-5 col-12">
                             <div class="footer-widget">
-                                <h2 class="fw-title"> <span>Quick_link</span></h2>
+                                <h2 class="fw-title"> <span>Quick Links</span></h2>
                                 <ul class="links">
                                     <li><a href="" src="./src/contact.html">Admission</a></li>
                                     <li><a href="" src="./src/brochure.html">Brochures</a></li>
@@ -199,7 +199,7 @@
         <script>
             $(document).ready(function(){
                 window.scrollTo({top: 0, behavior: 'smooth'});
-                $('#content-placeholder').load('./src/home1.html')
+                $('#content-placeholder').load('./src/home.html')
                 $('.nav-link').click(function(e){
                     e.preventDefault();
                     $('.nav-link').removeClass('active');
@@ -211,7 +211,8 @@
 
                 $(".footer-widget .links a").click(function(e) {
                     e.preventDefault();
-                    $("#content-wrapper-frame").attr("src", $(this).attr("src"));
+                    $('#content-placeholder').load($(this).attr('src'));
+                    //  $("#content-wrapper-frame").attr("src", $(this).attr("src"));
         
                     window.scrollTo({top: 0, behavior: 'smooth'});
                 });
