@@ -216,7 +216,7 @@
                     $(".meanclose").click();
                 });
 
-                $('#content-placeholder').load('./src/home.html')
+                $('#content-placeholder').load('./src/home1.html')
             });
 
         </script>
