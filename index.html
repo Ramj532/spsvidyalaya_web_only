@@ -42,7 +42,7 @@
             <div class="header-top-area">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-10 col-md-10 col-sm-6 col-6 hta-left1">
+                        <div class="col-lg-10 col-md-10 col-sm-8 col-8 hta-left1">
                             <div class="hta-box">
                                 <p class="text">Have you any question?</p>
                             </div>
@@ -71,9 +71,9 @@
                                 </a>
                             </div>                    
                         </div>
-                        <div class="col-lg-2 col-md-2 col-sm-6 col-6 hta-right text-right">
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-4 hta-right text-right">
                             <div class="hta-box">
-                                <a class="nav-link" style="color:#fff; border-radius:25px; border:1px solid #fff;" href="" src="./src/contact.html">Admission</a>
+                                <a class="nav-link admission_link" style="color:#fff; border-radius:25px; border:1px solid #fff;" href="" src="./src/contact.html">Admission</a>
                             </div>
                         </div>
                     </div>
@@ -199,6 +199,11 @@
         <script>
             $(document).ready(function(){
                 window.scrollTo({top: 0, behavior: 'smooth'});
+                $('.mean-nav #menu li a.nav-link').click(function(e) {
+                    e.preventDefault();
+                    $(".meanclose").click();
+                });
+
                 $('#content-placeholder').load('./src/home.html')
                 $('.nav-link').click(function(e){
                     e.preventDefault();
@@ -215,14 +220,7 @@
                     // $("#content-wrapper-frame").attr("src", $(this).attr("src"));
         
                     window.scrollTo({top: 0, behavior: 'smooth'});
-                });
-
-                $('.mean-nav #menu li a.nav-link').click(function(e) {
-                    e.preventDefault();
-                    $(".meanclose").click();
-                });
-
-                
+                });                
             });
 
         </script>

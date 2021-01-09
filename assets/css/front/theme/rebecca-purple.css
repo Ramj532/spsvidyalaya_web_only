@@ -2802,5 +2802,9 @@ ul li {
     .page-breadcumb-area {
         padding: 15px 0 15px;
     }
+    .nav-link.admission_link {
+        font-size: 0.6rem !important;
+        padding: 0.3rem !important;
+    }
 }
 
