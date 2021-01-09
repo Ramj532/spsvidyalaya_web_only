@@ -2092,7 +2092,7 @@ footer {}
     position: relative;
     z-index: 9;
     text-align: center;
-    
+    margin: 0 !important;
 }
 
 
@@ -2171,6 +2171,7 @@ footer {}
 
 .single-team .st-content .name a {
     display: block;
+    color: #000;
 }
 
 .single-team .st-content .text {
